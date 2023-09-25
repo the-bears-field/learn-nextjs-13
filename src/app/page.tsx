@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import styles from './Home.module.css';
+import { ReactNode } from 'react';
 
-export default function Home() {
+export default function Home(): ReactNode {
   return (
     <div className={styles.container}>
       <Head>
