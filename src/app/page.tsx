@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from './Home.module.css';
 import { ReactNode } from 'react';
+import Link from 'next/link';
 
 export default function Home(): ReactNode {
   return (
@@ -12,7 +13,7 @@ export default function Home(): ReactNode {
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Read <Link href="/posts/first-post">this page!</Link>
         </h1>
 
         <p className={styles.description}>
